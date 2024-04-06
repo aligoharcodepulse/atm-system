@@ -1,0 +1,49 @@
+*{
+    font-family: cursive;
+    background: url(images/one.png) no-repeat;
+    background-size: cover;
+}
+marquee{
+    font-size: xx-large;
+    color:white;
+}
+.card1, .card2, .card3, .card4{
+    padding: 100px;
+    color:#fff;
+    font-size: xx-large;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.card1{
+    background: url(images/inquiry.png) no-repeat;
+    background-size: cover;
+}
+.card2{
+    background: url(images/deposit.png) no-repeat;
+    background-size: cover;
+}
+.card3{
+    background: url(images/withdrawl.png) no-repeat;
+    background-size: cover;
+}
+.card4{
+    background: url(images/amount.png) no-repeat;
+    background-size: cover;
+}
+@media screen and (min-width: 768px) 
+{
+    /* Adjust card width and margins for larger screens */
+        .card1,.card2,.card3,.card4{
+            margin: 50px;
+            width: 43%;
+        }  
+}
+@media screen and (min-width: 1200px) 
+{
+    /* Further adjust card width and margins for extra-large screens */
+    .card1,.card2,.card3,.card4{
+        margin: 50px;
+        width: 43%;
+    }
+}

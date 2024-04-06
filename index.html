@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM System</title>
+    <style>
+        *{
+            font-family: cursive;
+            background: url(images/one.png) no-repeat;
+            background-size: cover;
+        }
+        marquee{
+            font-size: xx-large;
+            color:white;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 100px 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            margin: 100px 475px;
+        }
+        label{
+            color: #fff;
+            font-size: larger;
+            border: 1px solid transparent;
+            border-radius: 100px;
+            padding: 13px;
+            margin: 25px;
+        }
+        input{
+            border: 1px solid transparent;
+            border-radius: 100px;
+            padding: 10px;
+            margin: 40px 25px;
+            width: 79%;
+            color: #fff;
+            font-size: x-large;
+        }
+        button{
+            border: 1px solid transparent;
+            border-radius: 100px;
+            padding: 13px;
+            width: 83%;
+            margin-left: 25px;
+            color: #fff;
+            font-size: larger;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <marquee direction="left">ATM Banking System Created By Muhammad Ali Gohar</marquee>
+    <div class="container">
+        <label for="pinCode">Enter 4 Digit Pin Code Between 1000 - 1010</label>
+        <input type="password" maxlength="4" placeholder="Enter Pin" id="pinCode">
+        <button onclick="check_pin()">Enter</button>
+    </div>
+    
+    <script src="system.js"></script>
+</body>
+</html>
