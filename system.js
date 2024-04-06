@@ -60,7 +60,7 @@ function withdraw() {
     if (withdrawAmount > balance) {
         alert("Insufficient balance! You are ghareeb.");
     } else {
-        balance -= withdrawAmount; // Deduct the withdrawAmount from balance
+        balance -= withdrawAmount;
         alert(`Withdrawn ${withdrawAmount} successfully. Remaining balance: ${balance}`);
     }
 }
@@ -71,7 +71,7 @@ function other_amount()
     if (other_amount > balance) {
         alert("Insufficient balance! You are ghareeb.");
     } else {
-        balance -= other_amount; // Deduct the withdrawAmount from balance
+        balance -= other_amount;
         alert(`Withdrawn ${other_amount} successfully. Remaining balance: ${balance}`);
     }
 }

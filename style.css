@@ -33,7 +33,6 @@ marquee{
 }
 @media screen and (min-width: 768px) 
 {
-    /* Adjust card width and margins for larger screens */
         .card1,.card2,.card3,.card4{
             margin: 50px;
             width: 43%;
@@ -41,7 +40,6 @@ marquee{
 }
 @media screen and (min-width: 1200px) 
 {
-    /* Further adjust card width and margins for extra-large screens */
     .card1,.card2,.card3,.card4{
         margin: 50px;
         width: 43%;
