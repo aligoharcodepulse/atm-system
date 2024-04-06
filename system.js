@@ -12,7 +12,7 @@ let balance = 0;
 function balance_check()
 {
     if (balance === 0) {
-        alert("Your account balance is 0, First Deposit Some Amount To Your Account");
+        alert("Your account balance is 0, Deposit Some Amount To Your Account");
     }
     else{
         alert(`Your Account balance is ${balance}`);
