@@ -2,14 +2,22 @@
     font-family: cursive;
     background: url(images/one.png) no-repeat;
     background-size: cover;
+    box-sizing: border-box;
 }
-marquee{
+marquee {
     font-size: xx-large;
-    color:white;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card1, .card2, .card3, .card4{
     padding: 100px;
     color:#fff;
+    margin: 20px;
+    width: calc(50% - 40px);
     font-size: xx-large;
     border: 1px solid transparent;
     border-radius: 10px;
@@ -31,17 +39,14 @@ marquee{
     background: url(images/amount.png) no-repeat;
     background-size: cover;
 }
-@media screen and (min-width: 768px) 
-{
-        .card1,.card2,.card3,.card4{
-            margin: 50px;
-            width: 43%;
-        }  
-}
-@media screen and (min-width: 1200px) 
-{
-    .card1,.card2,.card3,.card4{
-        margin: 50px;
-        width: 43%;
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2, .card3, .card4 {
+        width: calc(100% - 40px);
+        margin: 10px 0;
     }
 }

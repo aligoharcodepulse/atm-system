@@ -5,55 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ATM System</title>
     <style>
-        *{
-            font-family: cursive;
-            background: url(images/one.png) no-repeat;
-            background-size: cover;
+    * {
+        font-family: cursive;
+        background: url(images/one.png) no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
         }
-        marquee{
-            font-size: xx-large;
-            color:white;
+    marquee {
+        font-size: xx-large;
+        color: white;
         }
-        .container {
-            max-width: 500px;
-            width: 100%;
-            padding: 100px 50px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-            margin: 100px 475px;
-            transition: transform 0.3s ease;
-        }
-        .container:hover {
-            transform: translate(5px, 5px);
-        }
-        label{
-            color: #fff;
-            font-size: larger;
-            border: 1px solid transparent;
-            border-radius: 100px;
-            padding: 13px;
-            margin: 25px;
-        }
-        input{
-            border: 1px solid transparent;
-            border-radius: 100px;
-            padding: 10px;
-            margin: 40px 25px;
-            width: 79%;
-            color: #fff;
-            font-size: x-large;
-        }
-        button{
-            border: 1px solid transparent;
-            border-radius: 100px;
-            padding: 13px;
-            width: 83%;
-            margin-left: 25px;
-            color: #fff;
-            font-size: larger;
-            
-        }
+
+    .container {
+        max-width: 500px;
+        width: 90%; 
+        padding: 80px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        margin: 100px auto;
+        transition: transform 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .container:hover {
+        transform: translate(5px, 5px);
+    }
+
+    label {
+        color: #fff;
+        font-size: larger;
+        border: 1px solid transparent;
+        border-radius: 100px;
+        width: calc(100% - 20px);
+        padding: 13px;
+        margin: 25px 0; 
+        display: block; 
+    }
+    input {
+        border: 1px solid transparent;
+        border-radius: 100px;
+        padding: 10px;
+        margin: 10px 0;
+        width: calc(100% - 20px); 
+        color: #fff;
+        font-size: x-large;
+        display: block;
+    }
+    button {
+        border: 1px solid transparent;
+        border-radius: 100px;
+        padding: 13px;
+        margin: 20px 0;
+        width: calc(100% - 20px);
+        color: #fff;
+        font-size: larger;
+        display: block; 
+    }
+
+    @media only screen and (max-width: 768px) {
+    .container {
+        padding: 60px 10px;
+    }
+}
+
+    
 
     </style>
 </head>
